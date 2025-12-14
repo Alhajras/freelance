@@ -174,13 +174,16 @@ header#top {
   border-radius: 18px;
   pointer-events: none;
 }
+
 h1.logo a {
 	display: inline-block;
 	float: left;
 	color: #444;
 	line-height: 2.25;
 	text-indent: -4999px;
-	background: url(../images/Aman-logo.png) no-repeat;
+/* 		background: url(../images/logo.png) no-repeat; */
+
+	background: url(../images/logo-min.png) no-repeat;
 	margin: 40px 0 0 40px;
 	width: 56px;
 	height: 74px;
@@ -240,6 +243,14 @@ header#top nav ul li a.nav-cta {
 		float: none;
 		font-size: 15px;
 	}
+	.image-logo {
+	    display: block;
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+		max-width: 42% !important;
+	}
+	
 	h1.logo a {
 		display: block;
 		float: none;
