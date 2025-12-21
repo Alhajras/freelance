@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Aman Medical Technology</title>
@@ -9,27 +10,36 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/featherlight.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
-	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+		rel="stylesheet">
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script type="text/javascript" src="js/featherlight.min.js"></script> 
+	<script type="text/javascript" src="js/featherlight.min.js"></script>
 
 </head>
+
 <body>
 	<header id="top">
 		<div class="wrapper">
 			<img class="image-logo" style="max-width: 14%;" src="images/Aman-logo.png" alt="light bulb">
-<!-- 			<h1 class="logo"><a href="#">Chase</a></h1> -->
+			<!-- 			<h1 class="logo"><a href="#">Chase</a></h1> -->
 			<nav>
 				<ul id="navigation">
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About Us</a></li>
 					<li><a href="#services">Services</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a onclick="setLanguage('ar')" href="#portfolio">AR</a></li>
+					<li><a onclick="setLanguage('en')" href="#portfolio">EN</a></li>
+					<!-- 					<li><a href="#portfolio">Portfolio</a></li> -->
 				</ul>
 			</nav>
+
 		</div>
 	</header>
-<!-- 
+
+	<!-- 
 	<section id="banner"><a name="home"></a>
 		<div class="wrapper">
 			<h2>Chase</h2>
@@ -41,21 +51,23 @@
 		</div>
 	</section>
  -->
-		<section class="text-section">	
+	<section class="text-section">
 		<div class="wrapper">
 			<div class="image align-left">
 				<img src="images/main-new.png" alt="light bulb" class="align-left">
 			</div>
 			<div class="text align-left">
-				<h3>We Love Bright Ideas</h3>
-				<p class="subtitle">See Your Ideas Brought to Life</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida blandit lacus a laoreet. Nullam sollicitudin urna metus, at malesuada orci fringilla in. Curabitur eleifend risus vitae ligula semper scelerisque. Nulla sed nisl nulla.</p>
-				<p>Fusce interdum suscipit ipsum, quis mattis metus posuere sit amet. Mauris rutrum imperdiet tortor.</p>
+				<h3 class="zain-extralight" data-i18n="motoTitle"></h3>
+				<p class="zain-extralight subtitle" data-i18n="motoSubTitle"></p>
+				<p class="zain-extralight" data-i18n="motoText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Duis gravida blandit
+					lacus a laoreet. Nullam sollicitudin urna metus, at malesuada orci fringilla in. Curabitur eleifend
+					risus vitae ligula semper scelerisque. Nulla sed nisl nulla.</p>
 			</div>
-			<div class="clear"></div>	
+			<div class="clear"></div>
 		</div>
 	</section>
-<!-- 
+	<!-- 
 	<section class="video-section">	
 		<div class="wrapper">
 			<h3>What is Aman?</h3>
@@ -67,42 +79,45 @@
 		</div>
 	</section>
  -->
-	
+
 	<section class="services-section"><a name="services"></a>
 		<div class="wrapper">
-			<h3>Services</h3>
-			<p class="subtitle">We do lots of cool things</p>
+			<h3 class="zain-extralight" data-i18n="servicesTtile">Services</h3>
+			<p data-i18n="servicesSubTitle" class="zain-extralight subtitle">We do lots of cool things</p>
 			<ul class="services-list">
 				<li>
 					<div class="image-container">
-						<img src="images/icon-pencil.png" alt="services icon" >
+						<img src="images/icon-pencil.png" alt="services icon">
 					</div>
-					<h5>Graphic Design</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida blandit lacus a laoreet. </p>
-					<a href="#">Learn More</a>
+					<h5 class="zain-extralight" data-i18n="firstServicesTitle">Graphic Design</h5>
+					<p class="zain-extralight" data-i18n="firstServicesSubTitle">Lorem ipsum dolor sit amet, consectetur
+						adipiscing elit. Duis gravida blandit lacus a laoreet.
+					</p>
 				</li>
 				<li>
 					<div class="image-container">
-						<img src="images/icon-camera.png" alt="services icon" >
+						<img src="images/icon-camera.png" alt="services icon">
 					</div>
-					<h5>Photography</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida blandit lacus a laoreet. </p>
-					<a href="#">Learn More</a>
+					<h5 class="zain-extralight" data-i18n="secondServicesTitle">Photography</h5>
+					<p class="zain-extralight" data-i18n="secondServicesSubTitle">Lorem ipsum dolor sit amet,
+						consectetur adipiscing elit. Duis gravida blandit lacus a laoreet.
+					</p>
 				</li>
 				<li>
 					<div class="image-container">
-						<img src="images/icon-film.png" alt="services icon" >
+						<img src="images/icon-film.png" alt="services icon">
 					</div>
-					<h5>Animation</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida blandit lacus a laoreet. </p>
-					<a href="#">Learn More</a>
+					<h5 class="zain-extralight" data-i18n="thirdServiceTitle">Animation</h5>
+					<p class="zain-extralight" data-i18n="thirdServiceSubeTitle">Lorem ipsum dolor sit amet, consectetur
+						adipiscing elit. Duis gravida blandit lacus a laoreet.
+					</p>
 				</li>
-				<div class="clear"></div>	
+				<div class="clear"></div>
 			</ul>
 		</div>
 	</section>
-	
-	<section class="features-section">	
+
+	<section class="features-section">
 		<div class="wrapper">
 			<ul class="feature-squares">
 				<li>
@@ -111,7 +126,8 @@
 					</div>
 					<div class="text">
 						<h5>Attention to Detail</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut dignissim sapien. Mauris congue faucibus enim, vel molestie lectus.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut dignissim sapien. Mauris
+							congue faucibus enim, vel molestie lectus.</p>
 					</div>
 				</li>
 				<li>
@@ -120,7 +136,8 @@
 					</div>
 					<div class="text">
 						<h5>Save Time</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut dignissim sapien. Mauris congue faucibus enim, vel molestie lectus.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut dignissim sapien. Mauris
+							congue faucibus enim, vel molestie lectus.</p>
 					</div>
 				</li>
 				<li>
@@ -129,7 +146,8 @@
 					</div>
 					<div class="text">
 						<h5>Complete Control</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut dignissim sapien. Mauris congue faucibus enim, vel molestie lectus.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut dignissim sapien. Mauris
+							congue faucibus enim, vel molestie lectus.</p>
 					</div>
 				</li>
 				<li>
@@ -138,25 +156,30 @@
 					</div>
 					<div class="text">
 						<h5>24/7 Support</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut dignissim sapien. Mauris congue faucibus enim, vel molestie lectus.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut dignissim sapien. Mauris
+							congue faucibus enim, vel molestie lectus.</p>
 					</div>
 				</li>
-				<div class="clear"></div>	
+				<div class="clear"></div>
 			</ul>
 		</div>
 	</section>
-	
-	<section class="text-section">	
+
+	<section class="text-section">
 		<div class="wrapper">
 			<div class="image align-right map-card">
-			
-			<iframe  class="align-left" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d216355.11035581498!2d19.970190523343316!3d32.0814557515004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13831c55479eee2b%3A0xe497dfce76d293e0!2sBenghazi%2C%20Libya!5e0!3m2!1sen!2sde!4v1765727056752!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<!-- 				<img src="images/chat-bubbles.png" alt="light bulb" class="align-left" style="margin-top: 60px;"> -->
+
+				<iframe class="align-left"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d216355.11035581498!2d19.970190523343316!3d32.0814557515004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13831c55479eee2b%3A0xe497dfce76d293e0!2sBenghazi%2C%20Libya!5e0!3m2!1sen!2sde!4v1765727056752!5m2!1sen!2sde"
+					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<!-- 				<img src="images/chat-bubbles.png" alt="light bulb" class="align-left" style="margin-top: 60px;"> -->
 			</div>
 			<div class="text align-right">
 				<h3>Let’s Talk</h3>
 				<p class="subtitle">We’re here to listen to your needs</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida blandit lacus a laoreet. Nullam sollicitudin urna metus, at malesuada orci fringilla in. </p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida blandit lacus a laoreet. Nullam
+					sollicitudin urna metus, at malesuada orci fringilla in. </p>
 				<ul class="list-checkmarks">
 					<li>Curabitur eleifend risus vitae ligula semper scelerisque.</li>
 					<li>Fusce interdum suscipit ipsum.</li>
@@ -164,10 +187,10 @@
 					<li>Mauris rutrum imperdiet tortor.</li>
 				</ul>
 			</div>
-			<div class="clear"></div>	
+			<div class="clear"></div>
 		</div>
 	</section>
-	
+
 	<section class="team-section"><a name="about"></a>
 		<div class="wrapper">
 			<h3>The Team</h3>
@@ -175,7 +198,7 @@
 			<ul class="team-list">
 				<li>
 					<div class="image-container">
-						<img src="images/team-1.jpg" alt="team member" >
+						<img src="images/team-1.jpg" alt="team member">
 					</div>
 					<h5>John Garret</h5>
 					<p>Lead Designer</p>
@@ -187,7 +210,7 @@
 				</li>
 				<li>
 					<div class="image-container">
-						<img src="images/team-2.jpg" alt="team member" >
+						<img src="images/team-2.jpg" alt="team member">
 					</div>
 					<h5>Alice Mills</h5>
 					<p>Lead Designer</p>
@@ -199,7 +222,7 @@
 				</li>
 				<li>
 					<div class="image-container">
-						<img src="images/team-3.jpg" alt="team member" >
+						<img src="images/team-3.jpg" alt="team member">
 					</div>
 					<h5>Scott Harris</h5>
 					<p>Lead Designer</p>
@@ -209,12 +232,13 @@
 						<li><a href="#" class="google">Google+</a></li>
 					</ul>
 				</li>
-				<div class="clear"></div>	
+				<div class="clear"></div>
 			</ul>
 		</div>
 	</section>
-	
-	<section class="portfolio-section"><a name="portfolio"></a>
+
+	<!-- 
+<section class="portfolio-section"><a name="portfolio"></a>
 		<h3>Portfolio</h3>
 		<p class="subtitle">Our featured works</p>
 		
@@ -252,8 +276,9 @@
 			<div class="clear"></div>	
 		</ul>
 	</section>
-	
-<!-- 
+ -->
+
+	<!-- 
 	<section class="email-list-section">
 		<h3>Subscribe</h3>
 		<p class="subtitle">Stay up to date with us</p>
@@ -264,8 +289,8 @@
 		</form>
 	</section>
  -->
-	
-<!-- 
+
+	<!-- 
 	<section class="pricing-section">	
 		<div class="wrapper">
 			<h3>Services</h3>
@@ -324,7 +349,7 @@
 		</div>
 	</section>
  -->
-	
+
 	<!-- 
 <section class="text-section">
 		<div class="text align-center">
@@ -350,4 +375,6 @@
 		</div>
 	</footer>
 </body>
+<script type="text/javascript" src="js/i18n.js"></script>
+
 </html>
