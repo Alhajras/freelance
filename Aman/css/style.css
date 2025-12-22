@@ -2,99 +2,121 @@
 /* #128d98 */
 /* ===== Global variables ===== */
 :root {
-  --primary-color: #128d98;
+	--primary-color: #128d98;
 }
 
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box; 
+	box-sizing: border-box;
 }
 
-html, html a {
+html,
+html a {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
 
-html, body {
-	min-height: 100%; 
+html,
+body {
+	min-height: 100%;
 }
 
 body {
 	font-size: 17px;
 	color: #444;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	background: #fff; 
+	background: #fff;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: 'Arimo', sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #444;
 	margin: 0;
-	padding: 0; 
+	padding: 0;
 }
 
-h2 { font-size: 60px;}
-h3 { font-size: 54px;}
-h4 { font-size: 32px;}
-h5 { font-size: 21px;}
-h6 { font-size: 18px;}
+h2 {
+	font-size: 60px;
+}
+
+h3 {
+	font-size: 54px;
+}
+
+h4 {
+	font-size: 32px;
+}
+
+h5 {
+	font-size: 21px;
+}
+
+h6 {
+	font-size: 18px;
+}
 
 
 .lemonada-<uniquifier> {
-  font-family: "Lemonada", cursive;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+	font-family: "Lemonada", cursive;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
 }
 
 .zain-extralight {
-  font-family: "Zain", sans-serif;
-  font-style: normal;
+	font-family: "Zain", sans-serif;
+	font-style: normal;
 }
 
 .zain-light {
-  font-family: "Zain", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+	font-family: "Zain", sans-serif;
+	font-weight: 300;
+	font-style: normal;
 }
 
 .zain-regular {
-  font-family: "Zain", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+	font-family: "Zain", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .zain-bold {
-  font-family: "Zain", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+	font-family: "Zain", sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
 .zain-extrabold {
-  font-family: "Zain", sans-serif;
-  font-weight: 800;
-  font-style: normal;
+	font-family: "Zain", sans-serif;
+	font-weight: 800;
+	font-style: normal;
 }
 
 .zain-black {
-  font-family: "Zain", sans-serif;
-  font-weight: 900;
-  font-style: normal;
+	font-family: "Zain", sans-serif;
+	font-weight: 900;
+	font-style: normal;
 }
 
 .zain-light-italic {
-  font-family: "Zain", sans-serif;
-  font-weight: 300;
-  font-style: italic;
+	font-family: "Zain", sans-serif;
+	font-weight: 300;
+	font-style: italic;
 }
 
 .zain-regular-italic {
-  font-family: "Zain", sans-serif;
-  font-weight: 400;
-  font-style: italic;
+	font-family: "Zain", sans-serif;
+	font-weight: 400;
+	font-style: italic;
 }
 
 p {
@@ -103,7 +125,7 @@ p {
 }
 
 p.subtitle {
-	font-family: 'Arimo', sans-serif;
+	/* font-family: 'Arimo', sans-serif; */
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 0.03em;
@@ -111,23 +133,28 @@ p.subtitle {
 	text-align: center;
 }
 
-img, embed, object, video {
-	max-width: 100%; }
+img,
+embed,
+object,
+video {
+	max-width: 100%;
+}
 
 
-ul, li {
+ul,
+li {
 	list-style: none;
 	margin: 0;
-	padding: 0; 
+	padding: 0;
 }
 
 a {
-	text-decoration: none; 
+	text-decoration: none;
 	color: var(--primary-color);
 }
 
 a:hover {
-	text-decoration: none; 
+	text-decoration: none;
 	color: #42966e;
 }
 
@@ -139,11 +166,11 @@ a:hover {
 .clear {
 	clear: both;
 }
-	
+
 .wrapper {
 	max-width: 1190px;
 	margin: 0 auto;
-	position: relative; 
+	position: relative;
 }
 
 input[type=text] {
@@ -165,7 +192,9 @@ input[type=text] {
 	text-align: center;
 }
 
-a.button-1, a.button-2, button {
+a.button-1,
+a.button-2,
+button {
 	color: #fff;
 	background: var(--primary-color);
 	border: 2px solid var(--primary-color);
@@ -201,7 +230,9 @@ a.button-2:hover {
 }
 
 @media only screen and (max-width: 640px) {
-	a.button-1, a.button-2 {
+
+	a.button-1,
+	a.button-2 {
 		font-size: 16px;
 		margin: 5px;
 	}
@@ -213,21 +244,22 @@ header#top {
 	background: #fff;
 	height: 160px;
 }
+
 .map-card {
-  border-radius: 18px;
-  overflow: hidden;
-  position: relative;
-  box-shadow:
-    0 20px 40px rgba(18, 152, 145, 0.25);
+	border-radius: 18px;
+	overflow: hidden;
+	position: relative;
+	box-shadow:
+		0 20px 40px rgba(18, 152, 145, 0.25);
 }
 
 .map-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border: 2px solid var(--brand);
-  border-radius: 18px;
-  pointer-events: none;
+	content: "";
+	position: absolute;
+	inset: 0;
+	border: 2px solid var(--brand);
+	border-radius: 18px;
+	pointer-events: none;
 }
 
 h1.logo a {
@@ -236,7 +268,7 @@ h1.logo a {
 	color: #444;
 	line-height: 2.25;
 	text-indent: -4999px;
-/* 		background: url(../images/logo.png) no-repeat; */
+	/* 		background: url(../images/logo.png) no-repeat; */
 
 	background: url(../images/logo-min.png) no-repeat;
 	margin: 40px 0 0 40px;
@@ -260,7 +292,7 @@ header#top nav ul li {
 header#top nav ul li a {
 	display: inline-block;
 	background: none;
-	padding:  10px 15px;
+	padding: 10px 15px;
 	color: #777;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -286,26 +318,29 @@ header#top nav ul li a.nav-cta {
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
-	h1.logo {
-	}
+
+	h1.logo {}
+
 	header#top nav {
 		float: none;
 		text-align: center;
 		width: 100%;
 		margin: 20px auto 0 auto;
 	}
+
 	header#top nav ul li {
 		float: none;
 		font-size: 15px;
 	}
+
 	.image-logo {
-	    display: block;
+		display: block;
 		float: none;
 		margin: 0 auto;
 		text-align: center;
 		max-width: 42% !important;
 	}
-	
+
 	h1.logo a {
 		display: block;
 		float: none;
@@ -354,8 +389,9 @@ header#top nav ul li a.nav-cta {
 		font-size: 64px;
 		margin-top: 64px;
 	}
+
 	#banner p.subtitle {
-	 font-size: 16px;
+		font-size: 16px;
 	}
 }
 
@@ -388,7 +424,8 @@ header#top nav ul li a.nav-cta {
 	margin-top: 80px;
 }
 
-.video-section .button-1, .video-section .button-2 {
+.video-section .button-1,
+.video-section .button-2 {
 	display: block;
 	margin: 60px auto 0 auto;
 }
@@ -421,7 +458,7 @@ ul.services-list li {
 }
 
 ul.services-list li:hover {
-	box-shadow: 0px 0px 40px rgba(0,0,0,.1);
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, .1);
 }
 
 ul.services-list li .image-container {
@@ -436,6 +473,8 @@ ul.services-list li .image-container {
 ul.services-list li .image-container img {
 	position: absolute;
 	top: 28px;
+	opacity: 0.33;
+	width: 3rem;
 	left: 28px;
 }
 
@@ -467,7 +506,7 @@ ul.services-list li:last-of-type {
 	ul.services-list li {
 		display: block;
 		width: 100%;
-		margin: 20px 0!important;
+		margin: 20px 0 !important;
 	}
 }
 
@@ -508,15 +547,13 @@ ul.services-list li:last-of-type {
 	width: 50%;
 }
 
-.text-section .text.align-right{
+.text-section .text.align-right {
 	float: right;
 	width: 50%;
 	padding: 0 40px 0 10%;
 }
 
-.text-section .image.align-center {
-	
-}
+.text-section .image.align-center {}
 
 .text-section .text.align-center {
 	text-align: center;
@@ -543,21 +580,24 @@ ul.list-checkmarks li {
 
 @media only screen and (max-width: 720px) {
 	.text-section .text {
-		float: none!important;
+		float: none !important;
 		text-align: center;
 	}
-	.text-section .text.align-right, 
+
+	.text-section .text.align-right,
 	.text-section .text.align-left,
 	.text-section .image.align-right,
 	.text-section .image.align-left {
 		width: 100%;
 	}
+
 	.text-section .image {
-		float: none!important;
-		width: 80%!important;
+		float: none !important;
+		width: 80% !important;
 		padding: 0 20px;
 		margin: 0 auto 60px auto;
 	}
+
 	.text-section .text p.subtitle {
 		text-align: center;
 	}
@@ -607,7 +647,7 @@ ul.list-checkmarks li {
 	.features-section ul.feature-squares li {
 		display: block;
 		width: 100%;
-		margin: 20px 0!important;
+		margin: 20px 0 !important;
 	}
 }
 
@@ -640,7 +680,7 @@ ul.team-list li {
 }
 
 ul.team-list li:hover {
-	box-shadow: 0px 0px 40px rgba(0,0,0,.1);
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, .1);
 }
 
 ul.team-list li .image-container {
@@ -691,9 +731,11 @@ ul.social-links li a:hover {
 ul.social-links li a.facebook {
 	background-image: url(../images/social-facebook.png);
 }
+
 ul.social-links li a.twitter {
 	background-image: url(../images/social-twitter.png);
 }
+
 ul.social-links li a.google {
 	background-image: url(../images/social-google.png);
 }
@@ -718,16 +760,18 @@ ul.team-list li:last-of-type {
 	ul.team-list li {
 		display: block;
 		width: 100%;
-		margin: 80px 0!important;
+		margin: 80px 0 !important;
 	}
+
 	ul.team-list li:first-of-type {
-		margin-top: 0!important;
+		margin-top: 0 !important;
 	}
+
 	ul.social-links li {
 		float: left;
 		display: inline-block;
 		width: 48px;
-		margin: 0 3px!important;
+		margin: 0 3px !important;
 	}
 }
 
@@ -762,6 +806,7 @@ ul.portfolio-list li {
 ul.portfolio-list li a:hover {
 	opacity: .5;
 }
+
 @media only screen and (max-width: 960px) {
 	ul.portfolio-list li {
 		display: block;
@@ -785,7 +830,7 @@ ul.portfolio-list li a:hover {
 	padding: 100px 0;
 	color: #fff;
 }
-	
+
 .email-list-section h3 {
 	color: #fff;
 	text-align: center;
@@ -849,7 +894,7 @@ ul.pricing-table li {
 }
 
 ul.pricing-table li:hover {
-	box-shadow: 0px 0px 40px rgba(0,0,0,.1);
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, .1);
 }
 
 .price-container {
@@ -944,7 +989,7 @@ ul.pricing-table ul.features li:hover {
 	ul.pricing-table li {
 		display: block;
 		width: 100%;
-		margin: 20px 0!important;
+		margin: 20px 0 !important;
 	}
 }
 
@@ -1031,9 +1076,11 @@ footer .footer-right a.social:hover {
 footer a.social.facebook {
 	background-image: url(../images/social-facebook.png);
 }
+
 footer a.social.twitter {
 	background-image: url(../images/social-twitter.png);
 }
+
 footer a.social.google {
 	background-image: url(../images/social-google.png);
 }
@@ -1042,19 +1089,25 @@ footer a.social.google {
 	footer {
 		padding: 30px 0;
 	}
-	footer .footer-left, footer .footer-right, footer a.logo {
+
+	footer .footer-left,
+	footer .footer-right,
+	footer a.logo {
 		float: none;
 		text-align: center;
 		margin: 0 auto;
 	}
+
 	footer .footer-left {
 		margin-bottom: 20px;
 	}
+
 	footer a.logo {
-		 margin: 10px auto 40px auto;
+		margin: 10px auto 40px auto;
 	}
+
 	footer .footer-links a {
-		margin: 0 5px!important;
+		margin: 0 5px !important;
 		font-size: 14px;
 	}
 }
