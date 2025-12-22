@@ -1,5 +1,9 @@
 const translations = {
   en: {
+    menuHome: "Home",
+    menuContact: "Contact",
+    menuAbout: "About Us",
+    menuServices: "Services",
     motoTitle: "Your bridge to global medical innovation",
     motoSubTitle: "European and German-certified medical technologies for Libya’s healthcare sector",
     motoText: "A Libyan company specialized in the import and supply of certified medical equipment from Germany and Europe, supported by a global network of approved suppliers across Asia and the Americas. We connect Libyan healthcare institutions with the latest medical technologies from companies certified with CE, FDA, and ISO, in full compliance with the highest quality and regulatory standards.",
@@ -10,9 +14,21 @@ const translations = {
     secondServicesTitle: "Custom Medical Equipment Import",
     secondServicesSubTitle: "We import medical equipment based on the specific needs of each healthcare facility. Our process ensures accurate selection, compliance, and timely delivery.",
     thirdServiceTitle: "Medical Equipment Selection Consulting",
-    thirdServiceSubeTitle: "We provide expert consultation to help select the most suitable medical equipment. Our recommendations are tailored to clinical needs, budget, and compliance."
+    thirdServiceSubeTitle: "We provide expert consultation to help select the most suitable medical equipment. Our recommendations are tailored to clinical needs, budget, and compliance.",
+    firstBenifitTitle: "Medical Procurement Risk Management",
+    firstBenifitSubTitle: "We go beyond selling equipment by actively managing medical procurement risks. We support healthcare institutions in making safe and informed purchasing decisions.",
+    secondBenifitTitle: "Carefully Vetted Global Suppliers",
+    secondBenifitSubTitle: "We select our suppliers based on certification, reputation, and clinical usage history. This ensures collaboration only with proven and reliable manufacturers.",
+    thirdBenifitTitle: "Rigorous Medical Product Screening",
+    thirdBenifitSubTitle: "We act as a filtering layer to prevent non-compliant products from entering healthcare facilities. This reduces operational and regulatory risks for our partners.",
+    fourthBenifitTitle: "Healthcare Institution Protection",
+    fourthBenifitSubTitle: "We provide an additional layer of protection against unreliable suppliers and solutions. Our focus is long-term operational stability and patient safety."
   },
   ar: {
+    menuHome: "الرئيسية",
+    menuContact: "تواصل معنا",
+    menuAbout: "من نحن",
+    menuServices: "خدماتنا",
     motoTitle: "بوابتك إلى الابتكار الطبي العالمي",
     motoSubTitle: "تقنيات طبية معتمدة من أوروبا وألمانيا لخدمة القطاع الصحي الليبي",
     motoText: "شركة ليبية متخصصة في استيراد وتوريد المعدات الطبية المعتمدة من ألمانيا وأوروبا، مع شبكة موردين عالميين معتمدين في آسيا وأمريكا. نربط المؤسسات الصحية الليبية بأحدث التقنيات الطبية من شركات حاصلة على شهادات CE وFDA وISO، وفق أعلى معايير الامتثال والجودة",
@@ -23,7 +39,15 @@ const translations = {
     secondServicesTitle: "الاستيراد حسب الطلب للمؤسسات الصحية",
     secondServicesSubTitle: "نقوم باستيراد المعدات الطبية حسب احتياجات كل منشأة صحية. نضمن دقة الاختيار والامتثال وسرعة التوريد.",
     thirdServiceTitle: "استشارات اختيار المعدات الطبية المناسبة",
-    thirdServiceSubeTitle: "نقدّم استشارات متخصصة لاختيار المعدات الطبية الأنسب. توصياتنا مصممة وفق الاحتياج الطبي والميزانية ومتطلبات الامتثال."
+    thirdServiceSubeTitle: "نقدّم استشارات متخصصة لاختيار المعدات الطبية الأنسب. توصياتنا مصممة وفق الاحتياج الطبي والميزانية ومتطلبات الامتثال.",
+    firstBenifitTitle: "إدارة مخاطر الشراء الطبي",
+    firstBenifitSubTitle: "نحن لا نبيع معدات فقط، بل نُدير مخاطر الشراء الطبي باحترافية. نساعد المؤسسات الصحية على اتخاذ قرارات شراء آمنة ومدروسة.",
+    secondBenifitTitle: "اختيار موردين موثوقين بعناية",
+    secondBenifitSubTitle: "نختار موردينا بناءً على الاعتماد، السمعة، وسجل الاستخدام السريري. نضمن التعامل فقط مع شركات أثبتت موثوقيتها وجودة منتجاتها.",
+    thirdBenifitTitle: "فلترة دقيقة للمنتجات الطبية",
+    thirdBenifitSubTitle: "نعمل كجهة فلترة تمنع وصول المنتجات غير المطابقة إلى المؤسسات الصحية. نحمي عملاءنا من المخاطر التشغيلية والتنظيمية المرتبطة بالمعدات الطبية.",
+    fourthBenifitTitle: "حماية المؤسسات الصحية",
+    fourthBenifitSubTitle: "نوفّر طبقة حماية إضافية ضد الموردين غير الموثوقين أو الحلول غير المعتمدة. هدفنا ضمان استدامة التشغيل وسلامة المرضى على المدى الطويل."
   }
 };
 
