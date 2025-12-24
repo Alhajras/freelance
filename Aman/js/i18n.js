@@ -96,3 +96,10 @@ const savedLang = localStorage.getItem("lang");
 const browserLang = navigator.language.startsWith("ar") ? "ar" : "en";
 
 setLanguage(savedLang || browserLang);
+
+document.querySelectorAll('.main-nav a, .lang-flags button').forEach(item => {
+  item.addEventListener('click', () => {
+    const toggle = document.getElementById('nav-toggle');
+    if (toggle) toggle.checked = false;
+  });
+});

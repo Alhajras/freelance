@@ -21,25 +21,56 @@
 </head>
 
 <body>
-	<header id="top">
-		<div class="wrapper">
-			<img class="image-logo" style="max-width: 14%;" src="images/Aman-logo.png" alt="light bulb">
-			<!-- 			<h1 class="logo"><a href="#">Chase</a></h1> -->
-			<nav>
-				<ul id="navigation">
-					<li><a class="zain-extralight" href="#home" data-i18n="menuHome">Home</a></li>
-					<li><a class="zain-extralight" href="#services" data-i18n="menuServices">Services</a></li>
-					<li><a class="zain-extralight" href="#contact" data-i18n="menuContact">Contact</a></li>
-					<li><a class="zain-extralight" href="#about" data-i18n="menuAbout">About Us</a></li>
-					<li style="margin-left: 5px;"><a onclick="setLanguage('ar')" href="#portfolio">AR</a></li>
-					<li><a href="#">|</a></li>
-					<li><a onclick="setLanguage('en')" href="#portfolio">EN</a></li>
-					<!-- 					<li><a href="#portfolio">Portfolio</a></li> -->
-				</ul>
-			</nav>
-
+	<header class="site-header">
+		<div class="header-wrapper">
+	  
+		  <!-- Logo -->
+		  <a href="#home" class="logo">
+			<img src="images/aman-logo-header.png" alt="Aman Medical Technology">
+		  </a>
+	  
+		  <!-- Mobile Menu Toggle -->
+		  <input type="checkbox" id="nav-toggle">
+		  <label for="nav-toggle" class="nav-toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		  </label>
+	  
+		  <!-- Navigation -->
+		  <nav class="main-nav">
+			<ul>
+			  <li><a href="#home" data-i18n="menuHome">Home</a></li>
+			  <li><a href="#services" data-i18n="menuServices">Services</a></li>
+			  <li><a href="#about" data-i18n="menuAbout">About</a></li>
+			  <li><a href="#contact" data-i18n="menuContact">Contact</a></li>
+	  
+			  <li class="lang-flags">
+				<button
+				  class="flag-btn"
+				  onclick="setLanguage('ar')"
+				  title="العربية"
+				  aria-label="Switch language to Arabic"
+				>
+				  <img src="images/ly.webp" alt="Arabic">
+				</button>
+			  
+				<button
+				  class="flag-btn"
+				  onclick="setLanguage('en')"
+				  title="English"
+				  aria-label="Switch language to English"
+				>
+				  <img src="images/gb.webp" alt="English">
+				</button>
+			  </li>
+							
+			</ul>
+		  </nav>
+	  
 		</div>
-	</header>
+	  </header>
+	  
 
 	<!-- 
 	<section id="banner"><a name="home"></a>
@@ -71,7 +102,6 @@
 		  partners.
 		</p>
   
-		<a href="#services" class="hero-btn">Our Services</a>
 	  </div>
   
 	  <div class="hero-image">
@@ -80,7 +110,7 @@
   
 	</div>
   </section>
-
+  
 	<!-- 
 	<section class="video-section">	
 		<div class="wrapper">

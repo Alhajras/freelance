@@ -1208,8 +1208,6 @@ footer a.social.google {
 .hero-image img {
 	width: 100%;
 	border-radius: 28px;
-	box-shadow:
-		0 30px 60px rgba(0, 0, 0, 0.15);
 	transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
@@ -1227,11 +1225,6 @@ footer a.social.google {
 	content: "";
 	position: absolute;
 	inset: -15%;
-	background: radial-gradient(
-		circle,
-		rgba(18, 141, 152, 0.35),
-		transparent 70%
-	);
 	filter: blur(60px);
 	z-index: -1;
 }
@@ -1277,5 +1270,228 @@ footer a.social.google {
 
 	.hero-description {
 		font-size: 16px;
+	}
+}
+
+/* ===============================
+   MODERN RESPONSIVE HEADER
+================================ */
+
+.site-header {
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	background: rgba(255, 255, 255, 0.9);
+	backdrop-filter: blur(12px);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 16px 24px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* LOGO */
+.logo img {
+	height: 56px;
+	width: auto;
+	display: block;
+}
+
+/* NAVIGATION */
+.main-nav ul {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+}
+
+.main-nav a {
+	font-family: "Zain", sans-serif;
+	font-size: 18px;
+	color: #555;
+	position: relative;
+	transition: color 0.3s ease;
+}
+
+.main-nav a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width: 0;
+	height: 2px;
+	background: var(--primary-color);
+	transition: width 0.3s ease;
+}
+
+.main-nav a:hover {
+	color: var(--primary-color);
+}
+
+.main-nav a:hover::after {
+	width: 100%;
+}
+
+/* LANGUAGE SWITCH */
+.lang-switch {
+	display: flex;
+	background: #f1f6f6;
+	border-radius: 999px;
+	padding: 4px;
+	gap: 4px;
+}
+
+.lang-btn {
+	border: none;
+	background: transparent;
+	padding: 6px 14px;
+	border-radius: 999px;
+	font-size: 14px;
+	font-weight: 700;
+	cursor: pointer;
+	color: #555;
+	transition: all 0.3s ease;
+}
+
+.lang-btn.active,
+.lang-btn:hover {
+	background: var(--primary-color);
+	color: #fff;
+}
+
+/* HAMBURGER */
+#nav-toggle {
+	display: none;
+}
+
+.nav-toggle {
+	display: none;
+	flex-direction: column;
+	gap: 6px;
+	cursor: pointer;
+}
+
+.nav-toggle span {
+	width: 26px;
+	height: 3px;
+	background: #444;
+	border-radius: 2px;
+	transition: all 0.3s ease;
+}
+
+/* ===============================
+   MOBILE STYLES
+================================ */
+
+@media (max-width: 900px) {
+
+	.nav-toggle {
+		display: flex;
+	}
+
+	.main-nav {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		height: 100vh;
+		width: 100%;
+		background: rgba(255, 255, 255, 0.97);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: right 0.4s ease;
+	}
+
+	.main-nav ul {
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	.main-nav a {
+		font-size: 26px;
+	}
+
+	/* OPEN MENU */
+	#nav-toggle:checked ~ .main-nav {
+		right: 0;
+	}
+
+	/* ANIMATE HAMBURGER */
+	#nav-toggle:checked + .nav-toggle span:nth-child(1) {
+		transform: rotate(45deg) translate(6px, 6px);
+	}
+
+	#nav-toggle:checked + .nav-toggle span:nth-child(2) {
+		opacity: 0;
+	}
+
+	#nav-toggle:checked + .nav-toggle span:nth-child(3) {
+		transform: rotate(-45deg) translate(6px, -6px);
+	}
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+	.logo img {
+		height: 46px;
+	}
+}
+
+.flag {
+	width: 28px;
+	height: 20px;
+	border-radius: 3px;
+	object-fit: cover;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  /* LANGUAGE FLAGS */
+
+.lang-flags {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+/* BUTTON RESET */
+.flag-btn {
+	all: unset;
+	cursor: pointer;
+	border-radius: 999px;
+	padding: 4px;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* FLAG IMAGE */
+.flag-btn img {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	display: block;
+	box-shadow: 0 0 0 1px #ddd;
+}
+
+/* HOVER */
+@media (hover: hover) {
+	.flag-btn:hover {
+		transform: translateY(-2px);
+	}
+}
+
+/* FOCUS (KEYBOARD USERS) */
+.flag-btn:focus-visible {
+	outline: 2px solid var(--primary-color);
+	outline-offset: 4px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+	.flag-btn img {
+		width: 42px;
+		height: 42px;
 	}
 }
