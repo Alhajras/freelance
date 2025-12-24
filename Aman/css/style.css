@@ -130,7 +130,7 @@ p.subtitle {
 	font-weight: 700;
 	letter-spacing: 0.03em;
 	color: #777;
-	text-align: center;
+	/* text-align: center; */
 }
 
 img,
@@ -514,13 +514,13 @@ ul.services-list li:last-of-type {
 /*Text Section*/
 
 .text-section {
-	text-align: left;
+	/* text-align: left; */
 	padding: 100px 0;
 	background: #fff;
 }
 
 .text-section p.subtitle {
-	text-align: left;
+	/* text-align: left; */
 	color: var(--primary-color);
 	font-size: 17px;
 	margin-bottom: 40px;
@@ -614,7 +614,6 @@ ul.list-checkmarks li {
 	.text-section .image {
 		float: none !important;
 		width: 80% !important;
-		padding: 0 20px;
 		margin: 0 auto 60px auto;
 	}
 
@@ -789,7 +788,6 @@ ul.team-list li:last-of-type {
 	}
 
 	ul.social-links li {
-		float: left;
 		display: inline-block;
 		width: 48px;
 		margin: 0 3px !important;
