@@ -22,7 +22,20 @@ const translations = {
     thirdBenifitTitle: "Rigorous Medical Product Screening",
     thirdBenifitSubTitle: "We act as a filtering layer to prevent non-compliant products from entering healthcare facilities. This reduces operational and regulatory risks for our partners.",
     fourthBenifitTitle: "Healthcare Institution Protection",
-    fourthBenifitSubTitle: "We provide an additional layer of protection against unreliable suppliers and solutions. Our focus is long-term operational stability and patient safety."
+    fourthBenifitSubTitle: "We provide an additional layer of protection against unreliable suppliers and solutions. Our focus is long-term operational stability and patient safety.",
+    contactTTitle: "Contact Us",
+    contactTSubTitle: "For any inquiries or requests, feel free to reach out to us through the following channels:",
+    contactEmail: "info@aman",
+    contactPhone: "+218 92 123 4567",
+    contactAddress: "123 Medical St, Tripoli, Libya",
+    teamTitle: "Our Team",
+    teamSubTitle: "Get to know us better",
+    firstAvatarName: "Abdulkaber Abdussalam",
+    firstAvatarTitle: "Managing Director",
+    secondAvatarName: "Mouad Abukraa",
+    secondAvatarTitle: "Head of Sales",
+    thirdAvatarName: "Abdulnaser",
+    thirdAvatarTitle: "Head of purchasing"
   },
   ar: {
     menuHome: "الرئيسية",
@@ -47,7 +60,20 @@ const translations = {
     thirdBenifitTitle: "فلترة دقيقة للمنتجات الطبية",
     thirdBenifitSubTitle: "نعمل كجهة فلترة تمنع وصول المنتجات غير المطابقة إلى المؤسسات الصحية. نحمي عملاءنا من المخاطر التشغيلية والتنظيمية المرتبطة بالمعدات الطبية.",
     fourthBenifitTitle: "حماية المؤسسات الصحية",
-    fourthBenifitSubTitle: "نوفّر طبقة حماية إضافية ضد الموردين غير الموثوقين أو الحلول غير المعتمدة. هدفنا ضمان استدامة التشغيل وسلامة المرضى على المدى الطويل."
+    fourthBenifitSubTitle: "نوفّر طبقة حماية إضافية ضد الموردين غير الموثوقين أو الحلول غير المعتمدة. هدفنا ضمان استدامة التشغيل وسلامة المرضى على المدى الطويل.",
+    contactTTitle: "تواصل معنا",
+    contactTSubTitle: "لأي استفسارات أو طلبات، لا تتردد في التواصل معنا عبر الوسائل التالية:",
+    contactEmail: "info@aman",
+    contactPhone: "+218 92 123 4567",
+    contactAddress: "العنوان طرابلس، طريق المطار، جزيرة الخلاطات بجانب محطة الوقود",
+    teamTitle: "فريقنا",
+    teamSubTitle: "تعرف علينا أكثر",
+    firstAvatarName: "عبد الكبير عبد السلام",
+    firstAvatarTitle: "المدير العام",
+    secondAvatarName: "معاذ ابو كراع ",
+    secondAvatarTitle: "رئيس المبيعات",
+    thirdAvatarName: "عبد الناصر",
+    thirdAvatarTitle: "رئيس المشتريات"
   }
 };
 

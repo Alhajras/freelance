@@ -561,8 +561,29 @@ ul.services-list li:last-of-type {
 	margin: 0 auto;
 }
 
+.icon-teal {
+	filter: brightness(0) saturate(100%) invert(36%) sepia(21%) saturate(1120%) hue-rotate(135deg) brightness(95%) contrast(95%);
+}
+
 .text-section .text.align-center p.subtitle {
 	text-align: center;
+}
+
+.list-item {
+	padding: 0.5rem;
+	display: flex;
+	align-items: center;
+	/* vertical alignment */
+	gap: 12px;
+	/* space between icon and text */
+}
+
+.list-item img {
+	width: 26px;
+	/* control icon size */
+	height: auto;
+	flex-shrink: 0;
+	/* prevent image from shrinking */
 }
 
 .text-section ul.list-checkmarks {
@@ -572,7 +593,6 @@ ul.services-list li:last-of-type {
 ul.list-checkmarks li {
 	text-align: left;
 	list-style-image: none;
-	background: url(../images/checkmark.png) top left no-repeat;
 	background-position: 0 2px;
 	margin: 10px 0;
 	padding: 0 10px 10px 40px;
@@ -633,6 +653,7 @@ ul.list-checkmarks li {
 .features-section ul.feature-squares li .image {
 	float: left;
 	width: 20%;
+	filter: brightness(0) invert(1);
 	margin-right: 5%;
 	margin-top: 20px;
 	text-align: center;
@@ -707,7 +728,7 @@ ul.social-links {
 }
 
 ul.social-links li {
-	float: left;
+	float: none;
 	display: inline-block;
 	margin: 0 5px;
 	padding: 0;
